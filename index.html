@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awsome and Google fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Trivia Games</title>
 </head>
+<!-- added content to body -->
 <body>
-    
+    <div class="container">
+        <h1>Test your Knowledge</h1>
+        <h2>Movies Music Sports</h2>
+        <div class="game-selector">Level: <span id="category-name"></span> <span id="level-display">Difficulty: Easy</span></div>
+        <div class="game-container">
+           <div id="question"></div>
+           <input type="text" id="answer" placeholder="Your Answer">
+           <button id="submit">Submit</button>
+           <div class="correct">Correct: <span id="correct">0</span></div>
+           <div class="incorrect">Incorrect: <span id="incorrect">0</span> / 5</div>
+        </div>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

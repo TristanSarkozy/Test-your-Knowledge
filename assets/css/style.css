@@ -1,0 +1,72 @@
+/* font and background color defined for the complete body*/
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #445361;
+}
+
+/* styling added to container class*/
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #00bfff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* styling added fot the two headings*/
+h1, h2 {
+    text-align: center;
+    color: #000000;
+}
+
+/* styling added for game-selector and gane-container classes*/
+.game-selector {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.game-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* position, size and weight defined*/
+#question {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* styling added for the input*/
+#answer {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+/* styling added for the submit button*/
+#submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #90ee90;
+    border: none;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* styling added for the counter of correct&incorrect answers*/
+.correct, .incorrect {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+

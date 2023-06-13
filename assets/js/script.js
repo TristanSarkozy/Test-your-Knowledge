@@ -1,4 +1,4 @@
-// Get the category variable for the easy level and set the questions & answers
+// Categories variable for the easy level and set the questions & answers
 
 const categoriesEasy = {
     movies: {
@@ -27,7 +27,7 @@ const categoriesEasy = {
     },
 };
 
-// Get the category variable for the intermediate level and set the questions & answers
+// Categories variable for the intermediate level and set the questions & answers
 
 const categoriesIntermediate = {
     movies: {
@@ -56,7 +56,7 @@ const categoriesIntermediate = {
     },
 };
 
-// Get the category variable for the pro level and set the questions & answers
+// Categories variable for the pro level and set the questions & answers
 
 const categoriesPro = {
     movies: {
@@ -84,3 +84,50 @@ const categoriesPro = {
         ] 
     },
 };
+
+// Set the difficulty levels into a single object
+
+const allQuestions = {
+    easy: categoriesEasy,
+    intermediate: categoriesIntermediate,
+    pro: categoriesPro,
+};
+
+// Set the variables
+
+let currentCategory;
+let currentQuestionsIndex;
+let correct;
+let incorrect;
+let allCategories = ['movies', 'music', 'sports'];
+let seenCategories = [];
+let currentDifficultyLevel = 'easy';
+
+// Set a function so the game starts with the chosen category
+
+function startGame(category) {
+    if (!seenCategories.includes(category)) {
+        seenCategories.push(category);
+    }
+
+// Set the current category, question index, the counter for the correct and incorrect answers
+
+currentCategory = allQuestions[currentDifficultyLevel][category];
+currentQuestionsIndex = 0;
+correct = 0;
+incorrect = 0;
+
+// Display the first question
+
+displayQuestion();
+}
+
+// Set the question to be displayed and the user interface(UI) elements
+
+function displayQuestion() {
+    const questionElement = document.getElementById('question');
+    const answerElement = document.getElementById('answer');
+    const submitButton = document.getElementById('submit');
+    const correctElement = document.getElementById('correct');
+    const incorrectElement = document.getElementById('incorrect');
+}

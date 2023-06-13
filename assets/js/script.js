@@ -130,7 +130,6 @@ function displayQuestion() {
     const submitButton = document.getElementById('submit');
     const correctElement = document.getElementById('correct');
     const incorrectElement = document.getElementById('incorrect');
-}
 
 // Verify if the current index exceeds the number of questions and proceeds to the next level
 // Goes through all categories
@@ -155,3 +154,69 @@ if (currentQuestionsIndex >= currentCategory.questions.length) {
         }
     }
 }
+
+// Update the category name in the user interface, display the question and reset the input answers field
+
+const catElement = document.getElementById('category-name');
+catElement.textContent = currentCategory.name;
+
+if (currentQuestionsIndex < currentCategory.questions.length) {
+    const question = currentCategory.questions[currentQuestionsIndex].question;
+    questionElement.textContent = question;
+    answerElement.value = '';
+    submitButton.addEventListener('click', checkAnswer);
+
+// Update the score elements and display "Game Over" after all the questions have been answered
+
+    correctElement.textContent = correct;
+    incorrectElement.textContent = incorrect;
+} else {
+    questionElement.textContent = 'Game Over';
+    answerElement.value = '';
+    submitButton.removeEventListener('click', checkAnswer);
+}
+}
+// User name answer checked and score updated
+
+function checkAnswer() {
+    const answerElement = document.getElementById('answer');
+    const answer = answerElement.value.trim().toLowerCase();
+    const correctAnswer = currentCategory.questions[currentQuestionsIndex].answer.toLowerCase();
+    const questionElement = document.getElementById('question');
+    const submitButton = document.getElementById('submit');
+    const incorrectElement = document.getElementById('incorrect');
+
+    // It doesnt allow to submit an empty answer
+
+    if (answer === '') {
+        return;
+    }
+
+    if (answer === correctAnswer) {
+        correct++;
+    } else {
+        incorrect++;
+    }
+
+// If the player answers incorrect 5 times, the game is over
+
+    if (incorrect >= 5) {
+        questionElement.textContent = 'Game Over';
+        answerElement.value = '';
+        submitButton.removeEventListener('click', checkAnswer);
+        incorrectElement.textContent = incorrect;
+        return;
+    }
+
+// Move to the next question
+
+    currentQuestionsIndex++;
+    displayQuestion();
+}
+
+// Start with the category 'Movies' by default
+
+startGame('movies');
+
+
+

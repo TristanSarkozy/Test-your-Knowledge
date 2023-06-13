@@ -68,6 +68,9 @@ The body section contains:
 
 4. The most complex function has a cyclomatic complexity value of 8 while the median is 4;
 
+## Accesibility and performance:
+- The Lighthouse feature on Google Devtools was used to assess accessibility and performance. All pages score high on accessibility.
+
 
 
 

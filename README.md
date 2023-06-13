@@ -45,6 +45,30 @@ The body section contains:
 - after five wrong answers, the game is over with a proper message:
 ![game over 2023-06-14 00-49-41](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/f7d24681-aed4-404c-8e98-3a7ebb0666e5)
 
+## Features left to implement:
+- a 'play again' button.
+
+## Testing and validation:
+### HTML Validation
+- The W3C Markup Validation Service was used to validate the HTML of the website. All pages passed with no errors or warnings:
+![html validation 2023-06-14 01-02-40](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/82de2a01-d3a7-46cb-8ead-0a0f9a32b4ea)
+
+### CSS Validation 
+- The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. The code passed with no errors or warnings:
+![css validation 2023-06-14 01-06-30](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/a5179bbd-d74a-43fb-9682-aa1331855fc0)
+
+### JavaScript Validation
+- JSHint Validator was used to validate the JavaScript files. Some small issues as missing semicolons, etc. were fixed;
+- The following metrics returned after testing:
+1. There are 3 functions in this file;
+
+2. Function with the largest signature take 1 arguments, while the median is 0;
+
+3. Largest function has 31 statements in it, while the median is 19;
+
+4. The most complex function has a cyclomatic complexity value of 8 while the median is 4;
+
+
 
 
 

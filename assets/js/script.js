@@ -131,3 +131,29 @@ function displayQuestion() {
     const correctElement = document.getElementById('correct');
     const incorrectElement = document.getElementById('incorrect');
 }
+
+// Verify if the current index exceeds the number of questions and proceeds to the next level
+// Goes through all categories
+//Checks if the current category from the whole loop has been seen
+
+if (currentQuestionsIndex >= currentCategory.questions.length) {
+    if (allCategories.length === seenCategories.length) {
+        if (currentDifficultyLevel === 'easy') {
+            currentDifficultyLevel = 'intermediate';
+            seenCategories = [];
+        } else if (currentDifficultyLevel === 'intermediate') {
+            currentDifficultyLevel = 'pro';
+            seenCategories = [];
+        }
+        const levelElement = document.getElementById('level-display');
+        levelElement.textContent = currentDifficultyLevel;
+    } for (let index = 0; index < allCategories.length; index++) {
+        if (!seenCategories.includes(allCategories[index])) {
+            currentCategory = allQuestions[currentDifficultyLevel][allCategories[index]];
+            currentQuestionsIndex = 0;
+
+// It stops after the first category was first found
+            break
+        }
+    }
+}

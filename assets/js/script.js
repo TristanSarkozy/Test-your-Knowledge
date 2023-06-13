@@ -5,8 +5,8 @@ const categoriesEasy = {
         name: 'Movies',
         questions: [
             { question: "What year did Disneyland open?", answer: "1955" },
-            { question: "What is the name of Wendy\’s dog in Peter Pan?", answer: "Nana"},
-            { question: "What are the names of Cinderella\’s stepsisters?", answer: "Anastasia and Drizella"},
+            { question: "What is the name of Wendy\'s dog in Peter Pan?", answer: "Nana"},
+            { question: "What are the names of Cinderella\'s stepsisters?", answer: "Anastasia and Drizella"},
         ]
     },
     music: {
@@ -20,7 +20,7 @@ const categoriesEasy = {
     sports: {
         name: 'Sports',
         questions: [
-            { question: "What\’s the diameter of a basketball hoop in inches?", answer: "18 inches"},
+            { question: "What\'s the diameter of a basketball hoop in inches?", answer: "18 inches"},
             { question: "The Olympics are held every how many years?", answer: "4 years"},
             { question: "Who has won more tennis grand slam titles, Venus Williams or Serena Williams?", answer: "Serena Williams"},
         ]
@@ -33,8 +33,8 @@ const categoriesIntermediate = {
     movies: {
         name: 'Movies',
         questions: [
-            { question: "What is Princess Mia\’s full name in The Princess Diaries?", answer: "Amelia Mignonette Thermopolis Renaldi"},
-            { question: "Rapunzel\’s chameleon in Tangled is called what?", answer: "Pascal"},
+            { question: "What is Princess Mia\'s full name in The Princess Diaries?", answer: "Amelia Mignonette Thermopolis Renaldi"},
+            { question: "Rapunzel\'s chameleon in Tangled is called what?", answer: "Pascal"},
             { question: "What name does Mulan pick for herself while pretending to be a man?", answer: "Ping"},
         ]
     },
@@ -62,7 +62,7 @@ const categoriesPro = {
     movies: {
         name: 'Movies',
         questions: [
-            { question: "How many stones were used to make Cinderella's Castle in Magic Kingdom?", answer: "None"},
+            { question: "How many stones were used to make Cinderella\'s Castle in Magic Kingdom?", answer: "None"},
             { question: "Who was the first cartoon character to get a star on the Hollywood Walk of Fame?", answer: "Mickey Mouse"},
             { question: "What are the names of the Three Good Fairies in Sleeping Beauty?", answer: "Flora, Fauna and Merryweather"},
         ]
@@ -157,24 +157,24 @@ if (currentQuestionsIndex >= currentCategory.questions.length) {
 
 // Update the category name in the user interface, display the question and reset the input answers field
 
-const catElement = document.getElementById('category-name');
-catElement.textContent = currentCategory.name;
+    const catElement = document.getElementById('category-name');
+    catElement.textContent = currentCategory.name;
 
-if (currentQuestionsIndex < currentCategory.questions.length) {
-    const question = currentCategory.questions[currentQuestionsIndex].question;
-    questionElement.textContent = question;
-    answerElement.value = '';
-    submitButton.addEventListener('click', checkAnswer);
+    if (currentQuestionsIndex < currentCategory.questions.length) {
+        const question = currentCategory.questions[currentQuestionsIndex].question;
+        questionElement.textContent = question;
+        answerElement.value = '';
+        submitButton.addEventListener('click', checkAnswer);
 
 // Update the score elements and display "Game Over" after all the questions have been answered
 
-    correctElement.textContent = correct;
-    incorrectElement.textContent = incorrect;
-} else {
-    questionElement.textContent = 'Game Over';
-    answerElement.value = '';
-    submitButton.removeEventListener('click', checkAnswer);
-}
+        correctElement.textContent = correct;
+        incorrectElement.textContent = incorrect;
+    } else {
+        questionElement.textContent = 'Game Over';
+        answerElement.value = '';
+        submitButton.removeEventListener('click', checkAnswer);
+    }
 }
 // User name answer checked and score updated
 

@@ -151,9 +151,7 @@ if (currentQuestionsIndex >= currentCategory.questions.length) {
         if (!seenCategories.includes(allCategories[index])) {
             currentCategory = allQuestions[currentDifficultyLevel][allCategories[index]];
             currentQuestionsIndex = 0;
-
-// It stops after the first category was first found
-            break
+            break;
         }
     }
 }

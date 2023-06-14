@@ -40,7 +40,7 @@ The body section contains:
 ![question area and answer box 2023-06-14 00-36-57](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/046f6a17-3c25-4c86-923d-b45100248188)
 - a submit button to register the answers and to pass, when clicked, to the next question:
 ![submit button 2023-06-14 00-41-45](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/e72795ab-d012-4b40-b9c8-59c0c957da9e)
-- a counter score for correct and incorrect answers:
+- a counter score area for correct and incorrect answers:
 ![tracking the score 2023-06-14 00-43-16](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/8862783e-6064-4607-94b9-4d27621b84b5)
 - after five wrong answers, the game is over with a proper message:
 ![game over 2023-06-14 00-49-41](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/f7d24681-aed4-404c-8e98-3a7ebb0666e5)
@@ -57,6 +57,7 @@ The body section contains:
 ### JavaScript Validation
 - JSHint Validator was used to validate the JavaScript files. Some small issues as missing semicolons, etc. were fixed;
 - The following metrics returned after testing:
+
 1. There are 3 functions in this file;
 
 2. Function with the largest signature take 1 arguments, while the median is 0;
@@ -67,6 +68,16 @@ The body section contains:
 
 ## Accesibility and performance:
 - The Lighthouse feature on Google Devtools was used to assess accessibility and performance. All pages score high on accessibility.
+- Responsive design for mobile and desktop devices tested succesfully with ui.dev:
+![ui dev 2023-06-14 15-23-01](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/d2bd56b0-f8f0-4670-911b-5f74dfa394db)
+
+## Deployment
+- The site was deployed to GitHub pages and the steps to deploy are as follows: 
+  1. In the GitHub repository, navigate to the Settings tab 
+  2. From the source section drop-down menu, select the Master Branch
+  3. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+- The live link can be found here - https://tristansarkozy.github.io/Test-your-Knowledge/
+
 
 
 

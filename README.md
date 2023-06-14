@@ -1,5 +1,6 @@
 # Test your knowledge
-![the main 2023-06-14 00-17-50](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/da426813-27b7-44fb-b3fd-c9765d8a2935)
+![main 2023-06-14 20-30-52](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/ad12d207-184f-4cce-9b00-190804e36194)
+
 
 ## Introduction
 TEST YOUR KNOWLEDGE is an exciting and challenging trivia game that tests the user's knowledge across three domains; Movies, Music and Sports. The users can enjoy hours of entertainment and learning with multiple levels of difficulty.
@@ -35,6 +36,9 @@ TEST YOUR KNOWLEDGE is an exciting and challenging trivia game that tests the us
 ![submit button 2023-06-14 00-41-45](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/e72795ab-d012-4b40-b9c8-59c0c957da9e)
 - a counter score area for correct and incorrect answers:
 ![tracking the score 2023-06-14 00-43-16](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/8862783e-6064-4607-94b9-4d27621b84b5)
+- a 'play again' button to restart the game if needed:
+![play againn 2023-06-14 20-36-42](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/317ca645-2d8e-4185-be4e-0b405ae29881)
+
 - after five wrong answers, the game is over with a proper message:
 ![game over 2023-06-14 00-49-41](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/f7d24681-aed4-404c-8e98-3a7ebb0666e5)
 

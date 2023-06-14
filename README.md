@@ -73,7 +73,8 @@ TEST YOUR KNOWLEDGE is an exciting and challenging trivia game that tests the us
 ## Accessibility and performance
 - The Lighthouse feature on Google Devtools was used to assess accessibility and performance. All pages score high on accessibility.
 - Responsive design for mobile and desktop devices tested successfully with ui.dev:
-![ui dev 2023-06-14 15-23-01](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/d2bd56b0-f8f0-4670-911b-5f74dfa394db)
+![uidev 2023-06-14 20-43-43](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/0caded21-5e9a-4dcc-9140-b9e2a187b837)
+https://ui.dev/amiresponsive?url=https://tristansarkozy.github.io/Test-your-Knowledge/
 
 ## Deployment
 - The site was deployed to GitHub pages and the steps to deploy are as follows: 

@@ -70,3 +70,15 @@ h1, h2 {
     font-weight: bold;
 }
 
+/* styling added for the play again button*/
+#play-again {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    
+}

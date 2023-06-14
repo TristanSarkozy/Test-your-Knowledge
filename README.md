@@ -45,9 +45,6 @@ The body section contains:
 - after five wrong answers, the game is over with a proper message:
 ![game over 2023-06-14 00-49-41](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/f7d24681-aed4-404c-8e98-3a7ebb0666e5)
 
-## Features left to implement:
-- a 'play again' button.
-
 ## Testing and validation:
 ### HTML Validation
 - The W3C Markup Validation Service was used to validate the HTML of the website. All pages passed with no errors or warnings:

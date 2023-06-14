@@ -34,13 +34,13 @@ To create an engaging trivia game that challenges players knowledge in movies, m
 The body section contains:
 - two headings with the name of game and the domains:
 ![h1, h2 2023-06-14 00-28-03](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/a067c4b7-270a-42ed-bc3f-3b6a8f691eb3)
-- the domain (movies, music and sports) played and the difficulty:
+- the level from the domain (movies, music and sports) played and the difficulty:
 ![level and difficulty 2023-06-14 00-31-54](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/197e4fdf-b8a0-464e-9a79-8db0a74cefa6)
 - a question area where the questions are displayed and an answer box for answers:
 ![question area and answer box 2023-06-14 00-36-57](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/046f6a17-3c25-4c86-923d-b45100248188)
 - a submit button to register the answers and to pass, when clicked, to the next question:
 ![submit button 2023-06-14 00-41-45](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/e72795ab-d012-4b40-b9c8-59c0c957da9e)
-- a counter for correct and incorrect answers:
+- a counter score for correct and incorrect answers:
 ![tracking the score 2023-06-14 00-43-16](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/8862783e-6064-4607-94b9-4d27621b84b5)
 - after five wrong answers, the game is over with a proper message:
 ![game over 2023-06-14 00-49-41](https://github.com/TristanSarkozy/Test-your-Knowledge/assets/114732027/f7d24681-aed4-404c-8e98-3a7ebb0666e5)

@@ -277,9 +277,9 @@ function checkAnswer() {
         incorrect++;
     }
 
-    /** If the player answers incorrect 7 times, the game is over*/
+    /** If the player answers incorrect 5 times, the game is over*/
 
-    if (incorrect >= 7) {
+    if (incorrect >= 5) {
         questionElement.textContent = 'Game Over';
         answerElement.value = '';
         submitButton.removeEventListener('click', checkAnswer);
@@ -287,7 +287,7 @@ function checkAnswer() {
         return;
     }
 
-    /** If the player answers correct 7 times, 'CONGRATULATIONS! YOU WON!' appears*/
+    /** If the player answers correct 27 times, 'CONGRATULATIONS! YOU WON!' appears*/
 
     if (correct >= 27) {
         questionElement.textContent = 'CONGRATULATIONS! YOU WON!';

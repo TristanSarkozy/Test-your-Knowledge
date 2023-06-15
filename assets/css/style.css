@@ -22,8 +22,9 @@ h1, h2 {
 
 /* styling added for game-selector and game-container classes*/
 .game-selector {
-    text-align: left;
+    text-align: center;
     margin-bottom: 50px;
+    font-weight: bold;
 }
 
 .game-container {
@@ -64,10 +65,18 @@ h1, h2 {
 }
 
 /* styling added for the counter of correct&incorrect answers*/
-.correct, .incorrect {
-    margin-top: 10px;
+.incorrect {
+    margin-top: -20px;
     font-size: 16px;
     font-weight: bold;
+    text-align: right;
+}
+
+.correct {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
 }
 
 /* styling added for the play again button*/

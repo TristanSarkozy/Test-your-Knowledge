@@ -1,28 +1,51 @@
 // Categories variable for the easy level and set the questions & answers
-
 const categoriesEasy = {
     movies: {
         name: 'Movies',
-        questions: [
-            { question: "What year did Disneyland open?", answer: "1955" },
-            { question: "What is the name of Wendy\'s dog in Peter Pan?", answer: "Nana"},
-            { question: "What are the names of Cinderella\'s stepsisters?", answer: "Anastasia and Drizella"},
+        questions: [{
+                question: "What year did Disneyland open?",
+                answer: "1955"
+            },
+            {
+                question: "What is the name of Wendy\'s dog in Peter Pan?",
+                answer: "Nana"
+            },
+            {
+                question: "What are the names of Cinderella\'s stepsisters?",
+                answer: "Anastasia and Drizella"
+            },
         ]
     },
     music: {
         name: 'Music',
-        questions: [
-            { question: "Before Phil Collins, who was the lead singer of Genesis?", answer: "Peter Gabriel"},
-            { question: "What rock star moonlights as a horror movie writer and director?", answer: "Rob Zombie"},
-            { question: "Eminem's 8 Mile is named after a road in which city?", answer: "Detroit"},
+        questions: [{
+                question: "Before Phil Collins, who was the lead singer of Genesis?",
+                answer: "Peter Gabriel"
+            },
+            {
+                question: "What rock star moonlights as a horror movie writer and director?",
+                answer: "Rob Zombie"
+            },
+            {
+                question: "Eminem's 8 Mile is named after a road in which city?",
+                answer: "Detroit"
+            },
         ]
     },
     sports: {
         name: 'Sports',
-        questions: [
-            { question: "What\'s the diameter of a basketball hoop in inches?", answer: "18 inches"},
-            { question: "The Olympics are held every how many years?", answer: "4 years"},
-            { question: "Who has won more tennis grand slam titles, Venus Williams or Serena Williams?", answer: "Serena Williams"},
+        questions: [{
+                question: "What\'s the diameter of a basketball hoop in inches?",
+                answer: "18 inches"
+            },
+            {
+                question: "The Olympics are held every how many years?",
+                answer: "4 years"
+            },
+            {
+                question: "Who has won more tennis grand slam titles, Venus Williams or Serena Williams?",
+                answer: "Serena Williams"
+            },
         ]
     },
 };
@@ -32,26 +55,50 @@ const categoriesEasy = {
 const categoriesIntermediate = {
     movies: {
         name: 'Movies',
-        questions: [
-            { question: "What is Princess Mia\'s full name in The Princess Diaries?", answer: "Amelia Mignonette Thermopolis Renaldi"},
-            { question: "Rapunzel\'s chameleon in Tangled is called what?", answer: "Pascal"},
-            { question: "What name does Mulan pick for herself while pretending to be a man?", answer: "Ping"},
+        questions: [{
+                question: "What is Princess Mia\'s full name in The Princess Diaries?",
+                answer: "Amelia Mignonette Thermopolis Renaldi"
+            },
+            {
+                question: "Rapunzel\'s chameleon in Tangled is called what?",
+                answer: "Pascal"
+            },
+            {
+                question: "What name does Mulan pick for herself while pretending to be a man?",
+                answer: "Ping"
+            },
         ]
     },
     music: {
         name: 'Music',
-        questions: [
-            { question: "Who was the first woman ever inducted into the Rock and Roll Hall of Fame?", answer: "Aretha Franklin"},
-            { question: "Paul McCartney and John Lennon wrote which Rolling Stones song?", answer: "I Wanna Be Your Man"},
-            { question: "What other legendary vocalist is a cousin of Whitney Houston?", answer: "Dionne Warwick"},
+        questions: [{
+                question: "Who was the first woman ever inducted into the Rock and Roll Hall of Fame?",
+                answer: "Aretha Franklin"
+            },
+            {
+                question: "Paul McCartney and John Lennon wrote which Rolling Stones song?",
+                answer: "I Wanna Be Your Man"
+            },
+            {
+                question: "What other legendary vocalist is a cousin of Whitney Houston?",
+                answer: "Dionne Warwick"
+            },
         ]
     },
     sports: {
         name: 'Sports',
-        questions: [
-            { question: "Which boxer fought against Muhammad Ali and won?", answer: "Joe Frazier"},
-            { question: "How many medals did China win at the Beijing Olympics?", answer: "100"},
-            { question: "How many holes are played in an average round of golf?", answer: "18"},
+        questions: [{
+                question: "Which boxer fought against Muhammad Ali and won?",
+                answer: "Joe Frazier"
+            },
+            {
+                question: "How many medals did China win at the Beijing Olympics?",
+                answer: "100"
+            },
+            {
+                question: "How many holes are played in an average round of golf?",
+                answer: "18"
+            },
         ]
     },
 };
@@ -61,27 +108,51 @@ const categoriesIntermediate = {
 const categoriesPro = {
     movies: {
         name: 'Movies',
-        questions: [
-            { question: "How many stones were used to make Cinderella\'s Castle in Magic Kingdom?", answer: "None"},
-            { question: "Who was the first cartoon character to get a star on the Hollywood Walk of Fame?", answer: "Mickey Mouse"},
-            { question: "What are the names of the Three Good Fairies in Sleeping Beauty?", answer: "Flora, Fauna and Merryweather"},
+        questions: [{
+                question: "How many stones were used to make Cinderella\'s Castle in Magic Kingdom?",
+                answer: "None"
+            },
+            {
+                question: "Who was the first cartoon character to get a star on the Hollywood Walk of Fame?",
+                answer: "Mickey Mouse"
+            },
+            {
+                question: "What are the names of the Three Good Fairies in Sleeping Beauty?",
+                answer: "Flora, Fauna and Merryweather"
+            },
         ]
     },
     music: {
         name: 'Music',
-        questions: [
-            { question: "Which classical composer was deaf?", answer: "Ludwig van Beethoven"},
-            { question: "Who was the first woman to have four country albums reach No. 1 on the Billboard 200?", answer: "Carrie Underwood"},
-            { question: "Which Super Bowl Halftime Show performer was upstaged by a dancing shark?", answer: "Katy Perry"}
+        questions: [{
+                question: "Which classical composer was deaf?",
+                answer: "Ludwig van Beethoven"
+            },
+            {
+                question: "Who was the first woman to have four country albums reach No. 1 on the Billboard 200?",
+                answer: "Carrie Underwood"
+            },
+            {
+                question: "Which Super Bowl Halftime Show performer was upstaged by a dancing shark?",
+                answer: "Katy Perry"
+            }
         ]
     },
     sports: {
         name: 'Sports',
-        questions: [
-            { question: "How many sports were included in the 2008 Summer Olympics?", answer: "28"},
-            { question: "What is the only team in the NFL to neither host nor play in the Super Bowl?", answer: "Cleveland Browns"},
-            { question: "What team won the first-ever football game played at night?", answer: "Philadelphia Athletics"},
-        ] 
+        questions: [{
+                question: "How many sports were included in the 2008 Summer Olympics?",
+                answer: "28"
+            },
+            {
+                question: "What is the only team in the NFL to neither host nor play in the Super Bowl?",
+                answer: "Cleveland Browns"
+            },
+            {
+                question: "What team won the first-ever football game played at night?",
+                answer: "Philadelphia Athletics"
+            },
+        ]
     },
 };
 
@@ -110,16 +181,16 @@ function startGame(category) {
         seenCategories.push(category);
     }
 
-// Set the current category, question index, the counter for the correct and incorrect answers
+    // Set the current category, question index, the counter for the correct and incorrect answers
 
-currentCategory = allQuestions[currentDifficultyLevel][category];
-currentQuestionsIndex = 0;
-correct = 0;
-incorrect = 0;
+    currentCategory = allQuestions[currentDifficultyLevel][category];
+    currentQuestionsIndex = 0;
+    correct = 0;
+    incorrect = 0;
 
-// Display the first question
+    // Display the first question
 
-displayQuestion();
+    displayQuestion();
 }
 
 // Set the question to be displayed and the user interface(UI) elements
@@ -131,50 +202,46 @@ function displayQuestion() {
     const correctElement = document.getElementById('correct');
     const incorrectElement = document.getElementById('incorrect');
 
-// Verify if the current index exceeds the number of questions and proceeds to the next level
-// Goes through all categories
-//Checks if the current category from the whole loop has been seen
-
-if (currentQuestionsIndex >= currentCategory.questions.length) {
-    if (allCategories.length === seenCategories.length) {
-        if (currentDifficultyLevel === 'easy') {
-            currentDifficultyLevel = 'intermediate';
-            seenCategories = [];
-        } else if (currentDifficultyLevel === 'intermediate') {
-            currentDifficultyLevel = 'pro';
-            seenCategories = [];
+    if (currentQuestionsIndex >= currentCategory.questions.length) {
+        const unseenCategories = allCategories.filter(category => !seenCategories.includes(category));
+        if (unseenCategories.length === 0) {
+            if (currentDifficultyLevel === 'easy') {
+                currentDifficultyLevel = 'intermediate';
+                seenCategories = [];
+                currentCategory = allQuestions[currentDifficultyLevel][allCategories[0]];
+            } else if (currentDifficultyLevel === 'intermediate') {
+                currentDifficultyLevel = 'pro';
+                seenCategories = [];
+                currentCategory = allQuestions[currentDifficultyLevel][allCategories[0]];
+            } else {
+                // Game completed
+                questionElement.textContent = 'Game Over';
+                answerElement.value = '';
+                submitButton.removeEventListener('click', checkAnswer);
+                correctElement.textContent = correct;
+                incorrectElement.textContent = incorrect;
+                return;
+            }
+            const levelElement = document.getElementById('level-display');
+            levelElement.textContent = currentDifficultyLevel;
+        } else {
+            const nextCategoryIndex = Math.floor(Math.random() * unseenCategories.length);
+            const nextCategory = unseenCategories[nextCategoryIndex];
+            seenCategories.push(nextCategory);
+            currentCategory = allQuestions[currentDifficultyLevel][nextCategory];
         }
-        const levelElement = document.getElementById('level-display');
-        levelElement.textContent = currentDifficultyLevel;
-    } for (let index = 0; index < allCategories.length; index++) {
-        if (!seenCategories.includes(allCategories[index])) {
-            currentCategory = allQuestions[currentDifficultyLevel][allCategories[index]];
-            currentQuestionsIndex = 0;
-            break;
-        }
+        currentQuestionsIndex = 0;
     }
-}
-
-// Update the category name in the user interface, display the question and reset the input answers field
 
     const catElement = document.getElementById('category-name');
     catElement.textContent = currentCategory.name;
 
-    if (currentQuestionsIndex < currentCategory.questions.length) {
-        const question = currentCategory.questions[currentQuestionsIndex].question;
-        questionElement.textContent = question;
-        answerElement.value = '';
-        submitButton.addEventListener('click', checkAnswer);
-
-// Update the score elements and display "Game Over" after all the questions have been answered
-
-        correctElement.textContent = correct;
-        incorrectElement.textContent = incorrect;
-    } else {
-        questionElement.textContent = 'Game Over';
-        answerElement.value = '';
-        submitButton.removeEventListener('click', checkAnswer);
-    }
+    const question = currentCategory.questions[currentQuestionsIndex].question;
+    questionElement.textContent = question;
+    answerElement.value = '';
+    submitButton.addEventListener('click', checkAnswer);
+    correctElement.textContent = correct;
+    incorrectElement.textContent = incorrect;
 }
 // User name answer checked and score updated
 
@@ -198,9 +265,9 @@ function checkAnswer() {
         incorrect++;
     }
 
-// If the player answers incorrect 5 times, the game is over
+    // If the player answers incorrect 5 times, the game is over
 
-    if (incorrect >= 5) {
+    if (incorrect >= 7) {
         questionElement.textContent = 'Game Over';
         answerElement.value = '';
         submitButton.removeEventListener('click', checkAnswer);
@@ -208,15 +275,14 @@ function checkAnswer() {
         return;
     }
 
-// Move to the next question
+    // Move to the next question
 
     currentQuestionsIndex++;
     displayQuestion();
 }
 
-// Start with the category 'Movies' by default
+// Start with the category 'Movies' by default when DOM loaded
 
-startGame('movies');
-
-
-
+addEventListener("DOMContentLoaded", (event) => {
+    startGame("movies")
+  });

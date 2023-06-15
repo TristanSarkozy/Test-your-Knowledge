@@ -207,17 +207,21 @@ function displayQuestion() {
     if (currentQuestionsIndex >= currentCategory.questions.length) {
 
         /** Check if there are categories not seen yet*/
-        const unseenCategories = allCategories.filter(category => !seenCategories.includes(category));
+       const unseenCategories = allCategories.filter(category => !seenCategories.includes(category)); 
+       console.log('current',currentCategory);
+       console.log('unseen',unseenCategories);
+       console.log('seen',seenCategories);
+       console.log('difficultyLevel', currentDifficultyLevel);
         if (unseenCategories.length === 0) {
 
             /** Update the difficulty level*/
             if (currentDifficultyLevel === 'easy') {
                 currentDifficultyLevel = 'intermediate';
-                seenCategories = [];
+                seenCategories = [allCategories[0]];
                 currentCategory = allQuestions[currentDifficultyLevel][allCategories[0]];
             } else if (currentDifficultyLevel === 'intermediate') {
                 currentDifficultyLevel = 'pro';
-                seenCategories = [];
+                seenCategories = [allCategories[0]];
                 currentCategory = allQuestions[currentDifficultyLevel][allCategories[0]];
             } else {
                 /** If game completed, game over*/ 
@@ -226,13 +230,14 @@ function displayQuestion() {
                 submitButton.removeEventListener('click', checkAnswer);
                 correctElement.textContent = correct;
                 incorrectElement.textContent = incorrect;
+                hideElements();
                 return;
             }
 
             /** Update the difficulty level*/
             const levelElement = document.getElementById('level-display');
             levelElement.textContent = currentDifficultyLevel;
-        } else {
+         } else {
             const nextCategoryIndex = Math.floor(Math.random() * unseenCategories.length);
             const nextCategory = unseenCategories[nextCategoryIndex];
             seenCategories.push(nextCategory);
@@ -255,6 +260,12 @@ function displayQuestion() {
     correctElement.textContent = correct;
     incorrectElement.textContent = incorrect;
 }
+/** set hide input elements when game over*/
+function hideElements() {
+    document.getElementById("submit").remove();
+    document.getElementById("answer").remove();
+}
+
 /** User name answer checked and score updated*/
 
 function checkAnswer() {
@@ -284,6 +295,7 @@ function checkAnswer() {
         answerElement.value = '';
         submitButton.removeEventListener('click', checkAnswer);
         incorrectElement.textContent = incorrect;
+        hideElements();
         return;
     }
 
@@ -294,6 +306,7 @@ function checkAnswer() {
         answerElement.value = '';
         submitButton.removeEventListener('click', checkAnswer);
         incorrectElement.textContent = incorrect;
+        hideElements();
         return;
     }
 

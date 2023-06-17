@@ -1,4 +1,5 @@
-/** Categories variable for the easy level and set the questions & answers*/
+/** Categories variable for the easy level 
+ * and set the questions & answers*/
 const categoriesEasy = {
     movies: {
         name: 'Movies',
@@ -50,8 +51,8 @@ const categoriesEasy = {
     },
 };
 
-/** Categories variable for the intermediate level and set the questions & answers*/
-
+/** Categories variable for the intermediate level 
+ * and set the questions & answers*/
 const categoriesIntermediate = {
     movies: {
         name: 'Movies',
@@ -103,8 +104,8 @@ const categoriesIntermediate = {
     },
 };
 
-/** Categories variable for the pro level and set the questions & answers*/
-
+/** Categories variable for the pro level 
+ * and set the questions & answers*/
 const categoriesPro = {
     movies: {
         name: 'Movies',
@@ -157,7 +158,6 @@ const categoriesPro = {
 };
 
 /** Set the difficulty levels into a single object*/
-
 const allQuestions = {
     easy: categoriesEasy,
     intermediate: categoriesIntermediate,
@@ -165,7 +165,6 @@ const allQuestions = {
 };
 
 /** Set the variables*/
-
 let currentCategory;
 let currentQuestionsIndex;
 let correct;
@@ -175,7 +174,6 @@ let seenCategories = [];
 let currentDifficultyLevel = 'easy';
 
 /** Set a function so the game starts with the chosen category*/
-
 function startGame(category) {
     if (!seenCategories.includes(category)) {
         seenCategories.push(category);
@@ -183,19 +181,17 @@ function startGame(category) {
 
     /** Set the current category, question index, 
      * the counter for the correct and incorrect answers*/
-
     currentCategory = allQuestions[currentDifficultyLevel][category];
     currentQuestionsIndex = 0;
     correct = 0;
     incorrect = 0;
 
     /** Display the first question*/
-
     displayQuestion();
 }
 
-/** Set the question to be displayed and the user interface(UI) elements*/
-
+/** Set the question to be displayed 
+ * and the user interface(UI) elements*/
 function displayQuestion() {
     const questionElement = document.getElementById('question');
     const answerElement = document.getElementById('answer');
@@ -267,7 +263,6 @@ function hideElements() {
 }
 
 /** User name answer checked and score updated*/
-
 function checkAnswer() {
     const answerElement = document.getElementById('answer');
     const answer = answerElement.value.trim().toLowerCase();
@@ -277,7 +272,6 @@ function checkAnswer() {
     const incorrectElement = document.getElementById('incorrect');
 
     /** It doesnt allow to submit an empty answer*/
-
     if (answer === '') {
         return;
     }
@@ -289,7 +283,6 @@ function checkAnswer() {
     }
 
     /** If the player answers incorrect 5 times, the game is over*/
-
     if (incorrect >= 5) {
         questionElement.textContent = 'Game Over';
         answerElement.value = '';
@@ -299,8 +292,8 @@ function checkAnswer() {
         return;
     }
 
-    /** If the player answers correct 27 times, 'CONGRATULATIONS! YOU WON!' appears*/
-
+    /** If the player answers correct 27 times, 
+     * 'CONGRATULATIONS! YOU WON!' appears*/
     if (correct >= 27) {
         questionElement.textContent = 'CONGRATULATIONS! YOU WON!';
         answerElement.value = '';
@@ -311,13 +304,11 @@ function checkAnswer() {
     }
 
     /** Move to the next question*/
-
     currentQuestionsIndex++;
     displayQuestion();
 }
 
 /** Start with the category 'Movies' by default when DOM loaded*/
-
 addEventListener("DOMContentLoaded", (event) => {
     startGame("movies")
   });

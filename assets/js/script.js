@@ -294,7 +294,7 @@ function checkAnswer() {
 
     /** If the player answers correct 27 times, 
      * 'CONGRATULATIONS! YOU WON!' appears*/
-    if (correct >= 27) {
+    if (correct >= 28) {
         questionElement.textContent = 'CONGRATULATIONS! YOU WON!';
         answerElement.value = '';
         submitButton.removeEventListener('click', checkAnswer);
@@ -310,5 +310,5 @@ function checkAnswer() {
 
 /** Start with the category 'Movies' by default when DOM loaded*/
 addEventListener("DOMContentLoaded", (event) => {
-    startGame("movies")
+    startGame("movies");
   });

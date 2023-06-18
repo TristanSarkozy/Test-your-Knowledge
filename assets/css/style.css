@@ -39,6 +39,7 @@ h1, h2 {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
 }
 
 /* styling added for the input*/

@@ -29,6 +29,9 @@ function startGame(category) {
  * and the user interface(UI) elements
  */
 function displayQuestion() {
+    
+    /** Add the cursor in the answer box after answer is placed */
+    document.getElementById("answer").focus();
     const questionElement = document.getElementById('question');
     const answerElement = document.getElementById('answer');
     const submitButton = document.getElementById('submit');

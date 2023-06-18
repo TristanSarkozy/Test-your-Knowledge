@@ -1,5 +1,6 @@
 /** Categories variable for the easy level 
- * and set the questions & answers*/
+ * and set the questions & answers 
+ */
 const categoriesEasy = {
     movies: {
         name: 'Movies',
@@ -52,7 +53,8 @@ const categoriesEasy = {
 };
 
 /** Categories variable for the intermediate level 
- * and set the questions & answers*/
+ * and set the questions & answers 
+ */
 const categoriesIntermediate = {
     movies: {
         name: 'Movies',
@@ -105,7 +107,8 @@ const categoriesIntermediate = {
 };
 
 /** Categories variable for the pro level 
- * and set the questions & answers*/
+ * and set the questions & answers 
+ */
 const categoriesPro = {
     movies: {
         name: 'Movies',
@@ -157,7 +160,7 @@ const categoriesPro = {
     },
 };
 
-/** Set the difficulty levels into a single object*/
+/** Set the difficulty levels into a single object */
 const allQuestions = {
     easy: categoriesEasy,
     intermediate: categoriesIntermediate,
